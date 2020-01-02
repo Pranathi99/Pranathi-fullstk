@@ -3,7 +3,7 @@ const app = express()
 const path=require('path')
 const port = process.env.PORT||3000
 
-app.use(express.static(__dirname+'/dist/ngproject')
-app.get('/', (req, res) => res.sendFile(path.join(__dirname+'/dist/ngproject/index.html')))
+app.use(express.static(__dirname+'/dist/project')
+app.get('/', (req, res) => res.sendFile(path.join(__dirname+'/dist/project/index.html')))
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
